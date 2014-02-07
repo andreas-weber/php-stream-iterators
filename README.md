@@ -50,7 +50,7 @@ $iterator = new FileStreamIterator('ftp://user:pass@ftp.favoriteftp.com/foo/bar.
 Note that if the stream cannot be opened and read, the constructor will throw a:
 
 ```PHP
-\StandardExceptions\IOExceptions\FileNotReadableException
+[\StandardExceptions\IOExceptions\FileNotReadableException](https://github.com/crazycodr/standard-exceptions/blob/master/src/StandardExceptions/IOExceptions/FileNotReadableException.php)
 ```
 _This exception comes from the **crazycodr/standard-exceptions** package_
 
@@ -64,7 +64,7 @@ $iterator = new StringStreamIterator($longstring, new BehaviorInterface());
 Note that only strings are accepted. If the initial value is not a string, the constructor will throw a:
 
 ```PHP
-\StandardExceptions\LogicExceptions\IllegalArgumentTypeException
+[\StandardExceptions\LogicExceptions\IllegalArgumentTypeException](https://github.com/crazycodr/standard-exceptions/blob/master/src/StandardExceptions/LogicExceptions/IllegalArgumentTypeException.php)
 ```
 _This exception comes from the **crazycodr/standard-exceptions** package_
 
@@ -91,7 +91,7 @@ $behavior = new CharacterChunkBehavior(10); //Returns 10 characters
 Note that only positive non-zero integers are accepted. If the initial value is not a positive non-zero integer, the constructor will throw a:
 
 ```PHP
-\StandardExceptions\ValidationExceptions\InvalidNumberException
+[\StandardExceptions\ValidationExceptions\InvalidNumberException](https://github.com/crazycodr/standard-exceptions/blob/master/src/StandardExceptions/ValidationExceptions/InvalidNumberException.php)
 ```
 _This exception comes from the **crazycodr/standard-exceptions** package_
 
