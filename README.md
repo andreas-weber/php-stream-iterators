@@ -8,11 +8,13 @@ Installation
 
 To install it, just include this requirement into your composer.json
 
+```JSON
 {
     "require": {
         "crazycodr/php-stream-iterators": "@dev-master"
     }
 }
+```
 And then run composer install/update as necessary.
 
 Use cases and examples
