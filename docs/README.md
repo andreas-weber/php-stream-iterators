@@ -1,35 +1,18 @@
-php-stream-iterators
-====================
-
-A collection of simple iterators that work on php streams to acquire data from them.
-
-Use cases and examples
-----------------------
-Use these stream iterators to return content in a stream like fashion meaning you won't need to load the whole stream into memory. Very useful for large files or for web services that return sequential data.
-
-```PHP
-//Outputs only digits from the file
-$myFile = new FileStreamIterator('/path/to/file', new CharacterBehavior());
-foreach($myFile as $char)
-{
-	if(is_digit($char))
-	{
-		echo $char;	
-	}
-}
-```
+Welcome to the documentation
+============================
+Documentation is provided as a list of markdown files, feel free to browse it at your own will and pace. It's actually really easy!
 
 Current classes provided
 ------------------------
-#### Interfaces
-1. (Planned) StreamIteratorInterface
-2. (Planned) BehaviorInterface
+#### [Interfaces](interfaces)
+1. (Planned) [StreamIteratorInterface](interfaces/StreamIteratorInterface.md)
+2. (Planned) [BehaviorInterface](interfaces/BehaviorInterface.md)
 
-#### Iterators
-1. (Planned) FileStreamIterator
-2. (Planned) StringStreamIterator
+#### [Iterators](iterators)
+1. (Planned) [FileStreamIterator](iterators/FileStreamIterator.md)
+2. (Planned) [StringStreamIterator](iterators/StringStreamIterator.md)
 
-#### Behaviors
-1. (Planned) CharacterBehavior
-2. (Planned) CharacterChunkBehavior
-3. (Planned) LineBehavior
+#### [Behaviors](behaviors)
+1. (Planned) [CharacterBehavior](behaviors/CharacterBehavior.md)
+2. (Planned) [CharacterChunkBehavior](behaviors/CharacterChunkBehavior.md)
+3. (Planned) [LineBehavior](behaviors/LineBehavior.md)
