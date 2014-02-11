@@ -1,3 +1,4 @@
+[![Latest Stable Version](https://poser.pugx.org/crazycodr/php-stream-iterators/version.png)](https://packagist.org/packages/crazycodr/php-stream-iterators) [![Total Downloads](https://poser.pugx.org/crazycodr/php-stream-iterators/downloads.png)](https://packagist.org/packages/crazycodr/php-stream-iterators) [![Build Status](https://travis-ci.org/crazycodr/php-stream-iterators.png?branch=master)](https://travis-ci.org/crazycodr/php-stream-iterators)
 php-stream-iterators
 ====================
 
