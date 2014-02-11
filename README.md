@@ -41,8 +41,8 @@ Current classes provided
 2. [BehaviorInterface](docs/interfaces/BehaviorInterface.md)
 
 #### [Iterators](docs/iterators)
-1. (Planned) [FileStreamIterator](docs/iterators/FileStreamIterator.md)
-2. (Planned) [StringStreamIterator](docs/iterators/StringStreamIterator.md)
+1. [FileStreamIterator](docs/iterators/FileStreamIterator.md)
+2. [StringStreamIterator](docs/iterators/StringStreamIterator.md)
 
 #### [Behaviors](docs/behaviors)
 1. [CharacterBehavior](docs/behaviors/CharacterBehavior.md)

@@ -13,7 +13,7 @@
 
 //Import list
 use \CrazyCodr\Stream\Interfaces\BehaviorInterface;
-use \Iterator
+use \Iterator;
 
 interface StreamIteratorInterface extends Iterator
 {

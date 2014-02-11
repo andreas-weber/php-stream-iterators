@@ -8,5 +8,5 @@ You can always define new iterators by following the existing code base and by r
 
 List of iterators
 -----------------
-1. (Planned) [FileStreamIterator](FileStreamIterator.md)
-2. (Planned) [StringStreamIterator](StringStreamIterator.md)
+1. [FileStreamIterator](FileStreamIterator.md)
+2. [StringStreamIterator](StringStreamIterator.md)
