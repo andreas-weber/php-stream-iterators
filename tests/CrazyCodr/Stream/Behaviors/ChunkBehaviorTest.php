@@ -37,6 +37,17 @@ class ChunkBehaviorTest extends PHPUnit_Framework_TestCase
 		
 	}
 
+	/**
+	 * Tests if the chunkSize exception works fine
+	 * @param  any $sizeToTest An invalid chunk size to test for expcetion thrown
+	 * @expectedException \StandardExceptions\ValidationExceptions\InvalidNumberException
+	 * @dataProvider testInvalidChunkSizesDataProvider
+	 */
+	public function testInvalidChunkSizes($sizeToTest)
+	{
+		$c = new ChunkBehavior($sizeToTest);
+	}
+
 	public function testNextDataProvider()
 	{
 		return array(
@@ -120,6 +131,33 @@ class ChunkBehaviorTest extends PHPUnit_Framework_TestCase
 					' noël',
 					' ça',
 				)
+			),
+
+		);
+	}
+
+	public function testInvalidChunkSizesDataProvider()
+	{
+		return array(
+
+			array(
+				'sizeToTest' => null,
+			),
+
+			array(
+				'sizeToTest' => 'hello',
+			),
+
+			array(
+				'sizeToTest' => '34',
+			),
+
+			array(
+				'sizeToTest' => 0,
+			),
+
+			array(
+				'sizeToTest' => -84,
 			),
 
 		);

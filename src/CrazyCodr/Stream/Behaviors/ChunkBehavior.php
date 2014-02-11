@@ -31,11 +31,22 @@ class ChunkBehavior implements BehaviorInterface
      * 
      * @param int $chunkSize Size of the chunk to read on each next()
      *
+     * @throws \StandardExceptions\ValidationExceptions\InvalidNumberException when $chunkSize is invalid
+     *
      * @access public
      */
 	public function __construct($chunkSize = 10)
 	{
+
+		//If the chunkSize is not a valid integer, throw a standard exception about it
+		if(!is_int($chunkSize) || $chunkSize <= 0)
+		{
+			throw new \StandardExceptions\ValidationExceptions\InvalidNumberException();
+		}
+
+		//Save the settings
 		$this->chunkSize = $chunkSize;
+
 	}
 	
     /**
