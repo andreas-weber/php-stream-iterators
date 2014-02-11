@@ -37,14 +37,14 @@ foreach($myFile as $char)
 Current classes provided
 ------------------------
 #### [Interfaces](docs/interfaces)
-1. (Planned) [StreamIteratorInterface](docs/interfaces/StreamIteratorInterface)
-2. (Planned) [BehaviorInterface](docs/interfaces/BehaviorInterface)
+1. [StreamIteratorInterface](docs/interfaces/StreamIteratorInterface)
+2. [BehaviorInterface](docs/interfaces/BehaviorInterface)
 
 #### [Iterators](docs/iterators)
 1. (Planned) [FileStreamIterator](docs/iterators/FileStreamIterator)
 2. (Planned) [StringStreamIterator](docs/iterators/StringStreamIterator)
 
 #### [Behaviors](docs/behaviors)
-1. (Planned) [CharacterBehavior](docs/behaviors/CharacterBehavior)
-2. (Planned) [CharacterChunkBehavior](docs/behaviors/CharacterChunkBehavior)
-3. (Planned) [LineBehavior](docs/behaviors/LineBehavior)
+1. [CharacterBehavior](docs/behaviors/CharacterBehavior)
+2. [CharacterChunkBehavior](docs/behaviors/CharacterChunkBehavior)
+3. [LineBehavior](docs/behaviors/LineBehavior)
