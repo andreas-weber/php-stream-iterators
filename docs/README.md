@@ -10,7 +10,7 @@ Current classes provided
 
 #### [Iterators](iterators)
 1. [FileStreamIterator](iterators/FileStreamIterator.md)
-2. [StringStreamIterator](iterators/StringStreamIterator.md)
+2. [MemoryStreamIterator](iterators/MemoryStreamIterator.md)
 
 #### [Behaviors](behaviors)
 1. [CharacterBehavior](behaviors/CharacterBehavior.md)
