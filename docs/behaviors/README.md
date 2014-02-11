@@ -10,6 +10,6 @@ You can always define new behaviors by following the existing code base and by r
 
 List of behaviors
 -----------------
-1. (Planned) [CharacterBehavior](CharacterBehavior.md)
-2. (Planned) [CharacterChunkBehavior](CharacterChunkBehavior.md)
-3. (Planned) [LineBehavior](LineBehavior.md)
+1. [CharacterBehavior](CharacterBehavior.md)
+2. [CharacterChunkBehavior](CharacterChunkBehavior.md)
+3. [LineBehavior](LineBehavior.md)

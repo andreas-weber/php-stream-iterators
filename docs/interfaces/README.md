@@ -4,5 +4,5 @@ The interfaces are used to define how all classes such as [iterators](../iterato
 
 List of interfaces
 ------------------
-1. (Planned) [StreamIteratorInterface](StreamIteratorInterface.md)
-2. (Planned) [BehaviorInterface](BehaviorInterface.md)
+1. [StreamIteratorInterface](StreamIteratorInterface.md)
+2. [BehaviorInterface](BehaviorInterface.md)

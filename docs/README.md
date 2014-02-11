@@ -5,14 +5,14 @@ Documentation is provided as a list of markdown files, feel free to browse it at
 Current classes provided
 ------------------------
 #### [Interfaces](interfaces)
-1. (Planned) [StreamIteratorInterface](interfaces/StreamIteratorInterface.md)
-2. (Planned) [BehaviorInterface](interfaces/BehaviorInterface.md)
+1. [StreamIteratorInterface](interfaces/StreamIteratorInterface.md)
+2. [BehaviorInterface](interfaces/BehaviorInterface.md)
 
 #### [Iterators](iterators)
 1. (Planned) [FileStreamIterator](iterators/FileStreamIterator.md)
 2. (Planned) [StringStreamIterator](iterators/StringStreamIterator.md)
 
 #### [Behaviors](behaviors)
-1. (Planned) [CharacterBehavior](behaviors/CharacterBehavior.md)
-2. (Planned) [CharacterChunkBehavior](behaviors/CharacterChunkBehavior.md)
-3. (Planned) [LineBehavior](behaviors/LineBehavior.md)
+1. [CharacterBehavior](behaviors/CharacterBehavior.md)
+2. [CharacterChunkBehavior](behaviors/CharacterChunkBehavior.md)
+3. [LineBehavior](behaviors/LineBehavior.md)

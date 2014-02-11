@@ -20,8 +20,8 @@ interface StreamIteratorInterface extends Iterator
 	
 	function __construct($content, BehaviorInterface $behavior);
 	function setContent($content);
-	function getContent();
 	function setBehavior(BehaviorInterface $behavior);
 	function getBehavior();
+	function getStreamHandle();
 
 }
