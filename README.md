@@ -12,7 +12,7 @@ To install it, just include this requirement into your composer.json
 ```JSON
 {
     "require": {
-        "crazycodr/php-stream-iterators": "@dev-master"
+        "crazycodr/php-stream-iterators": "1.*"
     }
 }
 ```
