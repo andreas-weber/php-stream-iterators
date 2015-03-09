@@ -52,10 +52,10 @@ class FileStreamIterator implements StreamIteratorInterface
      * @access protected
      */
 	protected $current_key = null;
-	
+
     /**
      * Builds a new FileStreamIterator
-     * 
+     *
      * @param mixed $content A valid URI to a resource that can be wrapped by PHP into a stream
      * @param BehaviorInterface A behavior to apply on each iteration
      *
@@ -71,7 +71,7 @@ class FileStreamIterator implements StreamIteratorInterface
 
     /**
      * Cleans up the object by closing the stream
-     * 
+     *
      * @access public
      */
 	public function __destruct()
@@ -88,7 +88,7 @@ class FileStreamIterator implements StreamIteratorInterface
     /**
      * Sets the content to work on by initializing the stream with new content
      * If there was already something initialized, it is closed
-     * 
+     *
      * @param mixed $content Description.
      *
      * @access public
@@ -123,7 +123,7 @@ class FileStreamIterator implements StreamIteratorInterface
 
     /**
      * Sets the behavior to use when iterating the stream
-     * 
+     *
      * @param BehaviorInterface Behavior to apply on each iteration
      *
      * @access public
@@ -135,7 +135,7 @@ class FileStreamIterator implements StreamIteratorInterface
 
     /**
      * Returns the currently assigned behavior
-     * 
+     *
      * @access public
      *
      * @return BehaviorInterface Behavior bound to the stream
@@ -147,7 +147,7 @@ class FileStreamIterator implements StreamIteratorInterface
 
     /**
      * Returns the stream handle of the stream resource
-     * 
+     *
      * @access public
      *
      * @return Resource Stream handle returned by fopen
@@ -159,7 +159,7 @@ class FileStreamIterator implements StreamIteratorInterface
 
     /**
      * Resets the stream to position 0
-     * 
+     *
      * @access public
      */
 	public function rewind()
@@ -172,13 +172,13 @@ class FileStreamIterator implements StreamIteratorInterface
 
     /**
      * Gets the next item from the stream based on behavior
-     * 
+     *
      * @access public
      */
 	public function next()
 	{
 		$c = $this->behavior->next($this->stream_handle);
-		if($c == null)
+		if($c === null)
 		{
 			$this->current_key = null;
 			$this->current_value = null;
@@ -192,7 +192,7 @@ class FileStreamIterator implements StreamIteratorInterface
 
     /**
      * Detects if the item we are on right now is valid or EOF
-     * 
+     *
      * @access public
      *
      * @return bool Is the current item valid or EOF
@@ -204,7 +204,7 @@ class FileStreamIterator implements StreamIteratorInterface
 
     /**
      * Returns the current value
-     * 
+     *
      * @access public
      *
      * @return mixed Value
@@ -216,7 +216,7 @@ class FileStreamIterator implements StreamIteratorInterface
 
     /**
      * Returns the current key
-     * 
+     *
      * @access public
      *
      * @return mixed Key

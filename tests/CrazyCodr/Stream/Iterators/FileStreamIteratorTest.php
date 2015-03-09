@@ -28,7 +28,7 @@ class FileStreamIteratorTest extends PHPUnit_Framework_TestCase
 
 		//Assert both arrays are the same
 		$this->assertEquals($e, $r);
-		
+
 	}
 
 	/**
@@ -47,7 +47,27 @@ class FileStreamIteratorTest extends PHPUnit_Framework_TestCase
 
 		//Initialize a file stream iterator on a missing file
 		$i = new FileStreamIterator(__FILE__.'ABC', $behavior);
-		
+
 	}
 
+    /**
+     *
+     */
+	public function testBlankLineWillBeRecognizedAsBlankLineAndNotNull()
+	{
+		$e = array(
+			1 => 'Hello',
+			2 => '',
+			3 => 'loved',
+			4 => 'it all'
+		);
+
+		$behavior = Mockery::mock('\CrazyCodr\Stream\Interfaces\BehaviorInterface');
+		$behavior->shouldReceive('next')->andReturnValues(array_values($e + array(null)));
+
+		$i = new FileStreamIterator(__FILE__, $behavior);
+		$r = iterator_to_array($i);
+
+		$this->assertEquals($e, $r);
+	}
 }
